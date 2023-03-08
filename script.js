@@ -17,7 +17,7 @@ function createMisteryLetter() {
   const array = text.split(' ');
   cartaContador.innerHTML = array.length;
   paragraph.innerHTML = '';
-  if (!text.replace(/\s/g, '').length) { // https://stackoverflow.com/questions/10261986/how-to-detect-string-which-contains-only-spaces - A função usa uma espressão regular para verificar se a string tem apenas espaços vazios.
+  if (!text.replace(/\s/g, '').length) { // https://stackoverflow.com/questions/10261986/how-to-detect-string-which-contains-only-spaces - A função usa uma expressão regular para verificar se a string tem apenas espaços vazios.
     paragraph.innerHTML = 'Por favor, digite o conteúdo da carta.';
   } else {
     for (let index = 0; index < array.length; index += 1) {
